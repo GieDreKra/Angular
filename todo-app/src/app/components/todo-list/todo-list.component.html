@@ -1,0 +1,22 @@
+<table class="table table-bordered table-dark">
+    <thead>
+        <tr>
+            <th scope="col">User Id</th>
+            <th scope="col">Id</th>
+            <th scope="col">Title</th>
+            <th scope="col">Completed</th>
+            <th scope="col">Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let todo of todos">
+            <th scope="col">{{todo.userId}}</th>
+            <th scope="col">{{todo.id}}</th>
+            <th scope="col">{{todo.title}}</th>
+            <th scope="col">{{todo.completed}}</th>
+            <th scope="col"><button type="button" class="btn btn-danger" 
+                (click)="deleteTodo(todo.id)">Delete</button>
+            </th>
+        </tr>
+    </tbody>
+</table>
