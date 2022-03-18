@@ -1,0 +1,20 @@
+<h3>Squares</h3>
+<table class="table table-dark">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">X</th>
+            <th scope="col">Y</th>
+            <th scope="col"></th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let point of pointsInput">
+            <td scope="col">{{point.id}}</td>
+            <td scope="col">{{point.x}}</td>
+            <td scope="col">{{point.y}}</td>
+            <td scope="col"></td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,17 @@
+<div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let school of schoolsInput">
+                <td scope="col">{{school.id}}</td>
+                <td scope="col">{{school.name}}</td>
+                <td scope="col"><button class="btn btn-danger" (click)="removeSchool(school.id)">Delete</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

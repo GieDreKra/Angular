@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <app-schools (removeSchoolEvent)="removeSchool($event)" 
+            (schoolCreateEvent)="createSchool($event)"
+                [schoolsInput]="schools">
+
+            </app-schools>
+        </div>
+        <div class="col">
+            <app-students (removeStudentEvent)="removeStudent($event)"
+             (studentCreateEvent)="createStudent($event)"
+                [schoolsInput]="schools" [studentsInput]="students">
+            </app-students>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+<div class="container-fluid">
+    <form *ngIf="selectedListCount<10">
+        <div class="mb-3">
+            <label class="form-label">X
+                <input name="x" [(ngModel)]="x" type="number" required min="-5000" max="5000" class="form-control">
+            </label>
+            <label class="form-label">Y
+                <input name="y" [(ngModel)]="y" type="number" required min="-5000" max="5000" class="form-control">
+            </label>
+        </div>
+        <div class="mb-3">
+            <button class="btn btn-dark" type="button" (click)="createPoint()">Create</button>
+           <label class="blink">     {{errorMsg}}</label>
+        </div>
+    </form>
+</div>

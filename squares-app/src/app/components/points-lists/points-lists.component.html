@@ -1,0 +1,21 @@
+<h3>Available lists of points </h3>
+<table class="table table-dark">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Points</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let list of listsInput">
+            <td scope="col">{{list.id}}</td>
+            <td scope="col">{{list.name}}</td>
+            <td scope="col">{{list.count}}</td>
+            <td scope="col"><button  class="btn btn-success" (click)="selectList(list.id,list.count)">Select</button></td>
+            <td scope="col"><button class="btn btn-danger" (click)="removeList(list.id)">Delete</button></td>
+        </tr>
+    </tbody>
+</table>
