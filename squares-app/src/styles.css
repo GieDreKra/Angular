@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+.blink {
+  animation: blink 3s steps(1, end) infinite;
+  color: red;
+  padding-left: 1cm;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}

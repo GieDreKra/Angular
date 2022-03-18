@@ -1,0 +1,20 @@
+<table class="table table-bordered table-dark">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Weight</th>
+            <th scope="col">Photo</th>
+            <th scope="col">Type</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let p of pokemons">
+            <th scope="col">{{p.id}}</th>
+            <th scope="col">{{p.name}}</th>
+            <th scope="col">{{p.weight}}</th>
+            <th scope="col"><img src={{p.sprites.front_default}} class="img-circle"></th>
+            <th scope="col">{{p.types[0].type.name}}</th>
+        </tr>
+    </tbody>
+</table>

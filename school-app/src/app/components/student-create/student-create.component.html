@@ -1,0 +1,16 @@
+<div class="container-fluid">
+    <form>
+        <div class="mb-3">
+            <label class="form-label">Name</label>
+            <input name="studentName" [(ngModel)]="studentName" type="text" class="form-control">
+            <label class="form-label">Surname</label>
+            <input name="studentSurname" [(ngModel)]="studentSurname" type="text" class="form-control">
+            <label class="form-label">School</label>
+            <select name="id" [(ngModel)]="schoolId">
+                <option *ngFor="let c of schoolsInput" [ngValue]="c.id" [selected]="c.id===2">{{c.name}}
+                </option>
+            </select>
+        </div>
+        <button class="btn btn-primary" type="button" (click)="createStudent()">Create</button>
+    </form>
+</div>

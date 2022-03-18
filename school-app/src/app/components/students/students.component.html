@@ -1,0 +1,7 @@
+<div class="container-fluid">
+    <app-students-list (removeStudentEvent)="removeStudent($event)"
+     [studentsInput]="studentsInput">
+    </app-students-list>
+    <app-student-create (studentCreateEvent)="createStudent($event)" 
+    [schoolsInput]="schoolsInput" ></app-student-create>
+</div>
